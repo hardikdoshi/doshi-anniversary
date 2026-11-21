@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>બિપિન અને નયના દોશી</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600&family=Fraunces:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf6e3;--surface:#fff9ea;--ink:#2c4a43;--rose:#c8405a;--gold:#e9a21f;--line:#e8d9b0;--muted:#5d716b;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c2623;--surface:#25332f;--ink:#efe6cf;--rose:#f08a9d;--gold:#f2b84b;--line:#3d4d47;--muted:#b3c0b9}}
+:root[data-theme="dark"]{--bg:#1c2623;--surface:#25332f;--ink:#efe6cf;--rose:#f08a9d;--gold:#f2b84b;--line:#3d4d47;--muted:#b3c0b9}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hind Vadodara","Noto Sans Gujarati",sans-serif;line-height:1.7;font-size:18px}
+.en{font-family:Fraunces,Georgia,serif;color:var(--muted);font-size:.9em}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px}
+header{text-align:center;padding:36px 0 44px;position:relative;overflow:hidden}
+.torana{display:flex;justify-content:space-around;max-width:640px;margin:0 auto 18px}
+.torana i{display:block;width:2px;background:var(--gold);position:relative}
+.torana i::after{content:"";position:absolute;left:50%;bottom:-13px;width:26px;height:26px;margin-left:-13px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--gold)}
+.torana i:nth-child(1),.torana i:nth-child(7){height:26px}
+.torana i:nth-child(2),.torana i:nth-child(6){height:50px}
+.torana i:nth-child(3),.torana i:nth-child(5){height:34px}
+.torana i:nth-child(4){height:62px}
+h1.names{font-size:clamp(38px,11vw,60px);line-height:1.25;margin:44px 0 10px;text-wrap:balance}
+.en-names{font-family:Fraunces,Georgia,serif;font-size:clamp(26px,7vw,36px);color:var(--rose);font-weight:600;line-height:1.2;margin:16px 0 4px}
+h1{font-size:clamp(30px,8vw,44px);line-height:1.3;margin:6px 0 4px;color:var(--rose);font-weight:600}
+.sub{margin:0 auto;max-width:30em;padding:0 22px}
+.count{display:flex;justify-content:center;gap:22px;margin-top:26px}
+.count div{min-width:58px}
+.count b{display:block;font-size:34px;font-weight:600;color:var(--gold);line-height:1.1}
+.count span{font-size:13px;color:var(--muted)}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 2px;color:var(--rose);font-weight:600}
+.when{margin:0 0 4px;font-weight:500}
+.where{margin:10px 0 18px}
+.where a{color:var(--ink);text-underline-offset:4px;text-decoration-color:var(--gold)}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;column-gap:20px;row-gap:12px}
+dt{font-weight:600;color:var(--gold);white-space:nowrap;font-variant-numeric:tabular-nums}
+dd{margin:0}
+dd .en{display:block;line-height:1.4}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-top:18px}
+.hosts{text-align:center;padding-bottom:56px}
+.hosts p{margin:4px 0}
+a:focus-visible,button:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+footer{border-top:1px solid var(--line);padding:18px 22px 32px;text-align:center;font-size:14px}
+#adminBtn{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:6px 16px;font:inherit;cursor:pointer}
+#adminPanel{max-width:640px;margin:18px auto 0;text-align:left}
+#adminPanel[hidden]{display:none}
+dt .en{display:block;font-weight:400;line-height:1.4}
+.ig{display:inline-block;margin-top:2px;font-size:.85em;color:var(--rose);text-underline-offset:3px}
+.ci{display:grid;gap:12px;margin:12px 0 18px}
+.ci label{display:grid;gap:4px;font-weight:500}
+.ci input[type=text],.ci input[type=number]{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}
+.ci fieldset{border:1px solid var(--line);border-radius:8px;display:flex;flex-wrap:wrap;gap:6px 18px;padding:8px 12px}
+.ci .ck{display:flex;align-items:center;gap:8px;font-weight:400}
+.ci button,.row button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--rose);background:var(--rose);color:var(--bg);padding:9px 18px}
+.ci button:disabled{opacity:.6}
+.row{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.row button{background:none;color:var(--muted);border-color:var(--line);padding:3px 10px;font-size:13px}
+.tally{color:var(--muted);font-size:15px;margin:0 0 6px}
+</style>
+</head>
+<body>
+<header>
+  <div class="torana" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <h1 class="names">બિપિન અને નયના દોશી</h1>
+  <p class="sub">અમારી ૫૦મી વર્ષગાંઠની ઉજવણીમાં આપને ભાવભર્યું આમંત્રણ છે.</p>
+  <p class="en-names">Bipin and Nayana Doshi</p>
+  <p class="en">You are cordially invited to celebrate our 50th anniversary.</p>
+  <div class="count" id="count" aria-live="off"></div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>વર્ષગાંઠની ઉજવણી</h2>
+    <p class="en" style="margin:0 0 12px">Anniversary celebration</p>
+    <p class="when">શનિવાર, ૨૮ નવેમ્બર ૨૦૨૬ <span class="en">· Saturday, 28 November 2026</span></p>
+    <p class="where">મણિલક્ષ્મી જૈન તીર્થ, માણેજ, તારાપુર પાસે<br><span class="en">Manilakshmi Jain Tirth, Manej, near Tarapur</span><br>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Manilakshmi+Jain+Tirth+Manej+Tarapur" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    <dl>
+      <dt>બપોરે ૩:૦૦ વાગ્યાથી<span class="en">From 3:00 PM</span></dt><dd>સ્વાગત<span class="en">Welcome</span></dd>
+      <dt>૪:૩૦–૬:૦૦<span class="en">4:30–6:00 PM</span></dt><dd>ચૌવિહાર<span class="en">Chauvihar</span></dd>
+      <dt>૬:૩૦–૮:૦૦<span class="en">6:30–8:00 PM</span></dt><dd>સંગીતકાર દીપ શાહ અને ગ્રુપ સાથે ભાવના<span class="en">Bhavna with musician Deep Shah and group</span><a class="ig" href="https://www.instagram.com/deepmusical1" target="_blank" rel="noopener">Deep Shah on Instagram</a></dd>
+      <dt>૮:૦૦–૧૦:૦૦<span class="en">8:00–10:00 PM</span></dt><dd>વર્ષગાંઠની ઉજવણી<span class="en">Anniversary celebration</span></dd>
+    </dl>
+  </section>
+
+  <section>
+    <p style="margin:0;text-align:center;color:var(--muted)">|| શ્રી કુંથુનાથાય નમઃ ||</p>
+    <h2 style="margin-top:14px">શ્રી સિદ્ધચક્ર પૂજન</h2>
+    <p class="en" style="margin:0 0 12px">Shree Siddhachakra Poojan</p>
+    <p class="when">રવિવાર, ૨૯ નવેમ્બર ૨૦૨૬ <span class="en">· Sunday, 29 November 2026</span></p>
+    <dl style="margin:0 0 16px">
+      <dt>સવારે ૯:૩૦ – ૧૨:૩૦<span class="en">9:30 AM – 12:30 PM</span></dt><dd>શ્રી સિદ્ધચક્ર પૂજન<span class="en">Siddhachakra Poojan</span></dd>
+      <dt>બપોરે ૧૨:૩૦<span class="en">12:30 PM</span></dt><dd>બપોરનું ભોજન<span class="en">Lunch</span></dd>
+    </dl>
+    <p class="where">મણિલક્ષ્મી જૈન તીર્થ, માણેજ, તારાપુર પાસે<br><span class="en">Manilakshmi Jain Tirth, Manej, near Tarapur</span></p>
+    <dl>
+      <dt>વિધિકાર</dt><dd>પંડિત ડો. હેમંતભાઈ શાહ<span class="en">Ritual leader: Pandit Dr. Hemantbhai Shah</span></dd>
+      <dt>સંગીતકાર</dt><dd>દીપ શાહ<span class="en">Musician: Deep Shah</span><a class="ig" href="https://www.instagram.com/deepmusical1" target="_blank" rel="noopener">Deep Shah on Instagram</a></dd>
+    </dl>
+    <p class="note">આ શુભ પ્રસંગની ઉજવણીમાં અમારી સાથે જોડાવા માટે તમને હાર્દિક આમંત્રણ છે.<br><span class="en">You are warmly invited to join us for this auspicious occasion.</span></p>
+  </section>
+
+  <section class="hosts">
+    <p style="color:var(--rose);font-weight:600">આમંત્રક <span class="en">· Hosts</span></p>
+    <p>હાર્દિક, માનસી અને અથર્વ દોશી</p>
+    <p>ડો. કિંજલ, ડો. મૌલિક, ત્વરા અને જીતાર્થ જોષી</p>
+    <p class="en">Hardik, Mansi and Atharv Doshi · Dr. Kinjal, Dr. Maulik, Tvara and Jitarth Joshi</p>
+  </section>
+</main>
+
+<footer>
+  <button id="adminBtn" type="button">Admin sign in</button>
+  <div id="adminPanel" class="note" hidden aria-live="polite"></div>
+</footer>
+
+<script>
+(function(){
+  var el=document.getElementById('count');
+  var target=new Date('2026-11-28T15:00:00+05:30').getTime();
+  function tick(){
+    var d=target-Date.now();
+    if(d<=0){el.textContent='';return;}
+    var days=Math.floor(d/864e5),h=Math.floor(d%864e5/36e5),m=Math.floor(d%36e5/6e4);
+    el.innerHTML='<div><b>'+days+'</b><span>days</span></div><div><b>'+h+'</b><span>hours</span></div><div><b>'+m+'</b><span>minutes</span></div>';
+  }
+  tick();setInterval(tick,30000);
+
+  var btn=document.getElementById('adminBtn'),panel=document.getElementById('adminPanel');
+  function mk(tag,text){var n=document.createElement(tag);if(text!=null)n.textContent=text;return n;}
+  var CHECKIN_URL='';
+  function showLink(){
+    panel.textContent='';panel.hidden=false;
+    panel.append(mk('strong','Guest check-in'));
+    if(!CHECKIN_URL){panel.append(mk('p','The check-in form link has not been added yet.'));return;}
+    var a=mk('a','Open check-in form');a.href=CHECKIN_URL;a.target='_blank';a.rel='noopener';
+    var p=mk('p');p.append(a);panel.append(p);
+  }
+  function show(msg){panel.textContent=msg;panel.hidden=false;}
+  var ADMIN_CODE='507294';
+  btn.addEventListener('click',function(){
+    btn.hidden=true;panel.textContent='';panel.hidden=false;
+    var f=document.createElement('form');f.className='ci';
+    f.innerHTML='<label>Enter admin code<input type="text" name="code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" autocomplete="off" required></label><div><button type="submit">Unlock</button> <span class="msg" role="status"></span></div>';
+    panel.append(f);
+    var m=f.querySelector('.msg');f.elements['code'].focus();
+    f.addEventListener('submit',async function(e){
+      e.preventDefault();
+      if(f.elements['code'].value.trim()!==ADMIN_CODE){m.textContent='Incorrect code.';return;}
+      showLink();
+    });
+  });
+})();
+</script>
+</body>
+</html>
